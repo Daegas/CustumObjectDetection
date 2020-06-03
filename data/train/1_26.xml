@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>1_26.jpg</filename>
+	<path>/home/dara/Desktop/ObjectDetection/data/train/1_26.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>husky</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>227</xmin>
+			<ymin>133</ymin>
+			<xmax>350</xmax>
+			<ymax>251</ymax>
+		</bndbox>
+	</object>
+</annotation>

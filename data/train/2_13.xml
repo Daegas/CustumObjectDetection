@@ -1,0 +1,26 @@
+<annotation>
+	<folder>husky_img_web</folder>
+	<filename>2_13.jpeg</filename>
+	<path>/home/dara/Downloads/Servicio/husky_img_web/2_13.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>617</width>
+		<height>416</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>husky</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>138</xmin>
+			<ymin>49</ymin>
+			<xmax>501</xmax>
+			<ymax>414</ymax>
+		</bndbox>
+	</object>
+</annotation>
