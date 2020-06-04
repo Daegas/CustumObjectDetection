@@ -1,0 +1,5 @@
+models
+inference_graph-ssd_inception_v2_coco
+PretrainedModels
+training/*
+!training/label_map.pbtxt
