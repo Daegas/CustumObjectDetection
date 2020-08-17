@@ -1,7 +1,7 @@
 <annotation>
 	<folder>train</folder>
 	<filename>1_23.jpg</filename>
-	<path>/home/dara/Desktop/ObjectDetection/data/train/1_23.jpg</path>
+	<path>/home/dara/Desktop/CustumObjectDetection/data/train/1_23.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,7 +18,7 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>175</xmin>
-			<ymin>134</ymin>
+			<ymin>185</ymin>
 			<xmax>279</xmax>
 			<ymax>233</ymax>
 		</bndbox>

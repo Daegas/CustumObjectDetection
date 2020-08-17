@@ -1,7 +1,7 @@
 <annotation>
 	<folder>test</folder>
 	<filename>0_19.jpg</filename>
-	<path>/home/dara/Desktop/ObjectDetection/data/test/0_19.jpg</path>
+	<path>/home/dara/Desktop/CustumObjectDetection/data/test/0_19.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -21,6 +21,18 @@
 			<ymin>168</ymin>
 			<xmax>201</xmax>
 			<ymax>216</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>husky</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>504</xmin>
+			<ymin>183</ymin>
+			<xmax>614</xmax>
+			<ymax>262</ymax>
 		</bndbox>
 	</object>
 </annotation>

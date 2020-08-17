@@ -1,7 +1,7 @@
 <annotation>
 	<folder>test</folder>
 	<filename>1_17.jpg</filename>
-	<path>/home/dara/Desktop/ObjectDetection/data/test/1_17.jpg</path>
+	<path>/home/dara/Desktop/CustumObjectDetection/data/test/1_17.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,8 +18,8 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>245</xmin>
-			<ymin>134</ymin>
-			<xmax>337</xmax>
+			<ymin>181</ymin>
+			<xmax>336</xmax>
 			<ymax>223</ymax>
 		</bndbox>
 	</object>

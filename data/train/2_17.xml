@@ -1,7 +1,7 @@
 <annotation>
-	<folder>husky_img_web</folder>
+	<folder>train</folder>
 	<filename>2_17.jpeg</filename>
-	<path>/home/dara/Downloads/Servicio/husky_img_web/2_17.jpeg</path>
+	<path>/home/dara/Desktop/CustumObjectDetection/data/train/2_17.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,8 +18,8 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>207</xmin>
-			<ymin>47</ymin>
-			<xmax>739</xmax>
+			<ymin>336</ymin>
+			<xmax>737</xmax>
 			<ymax>574</ymax>
 		</bndbox>
 	</object>
