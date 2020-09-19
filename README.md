@@ -2,8 +2,8 @@
 [![Documentation Status](https://readthedocs.org/projects/custumobjectdetection/badge/?version=latest)](https://custumobjectdetection.readthedocs.io/es/latest/?badge=latest)
 
 # Documentation
-Leer la documentación actual en: 
-(custumobjectdetection.rtfd.io)
+ 
+[Leer la documentación actual](custumobjectdetection.rtfd.io)
 
 # Contacto
 
