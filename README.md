@@ -3,7 +3,7 @@
 
 # Documentation
  
-[Leer la documentación actual](custumobjectdetection.rtfd.io)
+Leer la documentación actual en: <https://custumobjectdetection.readthedocs.io/es/latest/>
 
 # Contacto
 
