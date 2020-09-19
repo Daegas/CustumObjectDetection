@@ -1,0 +1,54 @@
+body {
+
+    background-color: #222222;
+    color: #eeeeee;
+
+}
+
+div.body {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+div.sphinxsidebar a {
+    color: #eeeeee;
+}
+
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+    color: #ffdf00;
+}
+
+/* -- body styles ----------------------------------------------------------- */
+
+a {
+    color: rgb(8, 151, 212);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffdf00;
+    text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4{
+    color: #ffdf00 !important;
+}
+
+div.body li {
+    list-style-type: ' 👉';
+    padding-inline-start: 1rem;
+  }
+
+
+/* -- notes styles ----------------------------------------------------------- */
+
+.note{
+    color: #222222;
+}
+
+.topic{
+    color: #222222;
+}
