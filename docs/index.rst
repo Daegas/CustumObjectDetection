@@ -10,6 +10,9 @@ Welcome to Custom Object Detection's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   pages/intro
+   pages/training
+
 
 
 Indices and tables
