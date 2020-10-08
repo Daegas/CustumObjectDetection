@@ -1,0 +1,468 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Entrenamiento &mdash; documentación de Husky Detection - 1.0</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/darker.css" type="text/css" />
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../search.html"/>
+    <link rel="top" title="documentación de Husky Detection - 1.0" href="../index.html"/>
+        <link rel="prev" title="Introducción" href="intro.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="fa fa-home"> Husky Detection </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#get-started">Get Started</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Entrenamiento</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contexto">Contexto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacion">Instalación</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <div class="section" id="entrenamiento">
+<h1>Entrenamiento<a class="headerlink" href="#entrenamiento" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Repositorio: <a class="reference external" href="https://github.com/Daegas/CustumObjectDetection">CustumObjectDetection</a></p>
+<div class="section" id="contexto">
+<h2>Contexto<a class="headerlink" href="#contexto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El fin de esta sección es compilar información básica para entender el proceso
+de entrenamiento del modelo.</p>
+<div class="section" id="redes-neuronales-convolucionales-cnn">
+<h3>Redes Neuronales Convolucionales (CNN)<a class="headerlink" href="#redes-neuronales-convolucionales-cnn" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las CNN fueron introducidas por primera vez por Yann LeCun 1998 en
+<a class="reference external" href="https://pdfs.semanticscholar.org/62d7/9ced441a6c78dfd161fb472c5769791192f6.pdf">Gradient-Based Learning Applied to Document Recognition</a>
+y resultaron ser muy efectivas en reconocimiento de imágenes y clasificación.</p>
+<p>👁 <a class="reference external" href="https://www.youtube.com/watch?v=aircAruvnKk">¿Pero qué «es» una Red neuronal?</a></p>
+<p>Cómo se ve en el video una red neuronal está compuesta por capas, cada capa contiene un vector de
+características que conservan una relación espacial entre pixeles.
+Dada una imagen en forma de matriz:</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://setosa.io/ev/image-kernels/">Explicación Visual Kernels</a></p></li>
+</ul>
+<p>Se aplican filtros para resaltar bordes, circunferencias, esquinas, etc. Esta técnica para detectar las partes más importantes de una imagen se llama «convolución»</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://www.youtube.com/watch?v=IHZwWFHWa-w&amp;t=660s">Descenso de gradiente, es como las redes neuronales aprenden</a></p></li>
+</ul>
+<p>Con el descenso de gradiente se buscar calcular cuales valores de pesos y bias minimizan el costo, la distancia del resultado obtenido en la última capa con el resultado esperado.</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://www.youtube.com/watch?v=Ilg3gGewQ5U">¿Qué es la retropropagación y qué hace en realidad?</a></p></li>
+</ul>
+<p>Cada neurona en la penúltima capa necesita unos ajustes de parámetros (bias, pesos) para que en la última capa (salida) las neuronas más activas correspondan a las que se esperan estén más activas. Se agregan todos los ajustes de todas las neuronas de esa penúltima capa, luego se hace lo mismo con la antepenúltima y así hasta llegar a la segunda capa (la primera es la entrada). A eso se le llama «retropropagación».</p>
+<p><strong>Otros datos:</strong></p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://www.i2tutorials.com/activation-functions-in-deep-learning/">Funciones de Activación</a></p></li>
+</ul>
+<p>Cada neurona toma la una entrada, la multiplica por el peso, le agrega el bias y el resultado lo pasa por una función de activación, que son funciones que determinan si una neurona debe o no ser activada. Ayudan a normalizar en un rango [0 , 1] o [-1 , 1] Existen muchos tipos de funciones de activación (Sigmoid, ReLU, TanH, LeakyReLU, Softmax, etc)</p>
+<ul class="simple">
+<li><p>Capas</p></li>
+</ul>
+<p>El propósito de cada capa varia, a veces pueder ser reducir dimensionalidad (pooling), detectar patrones (convolución) entre otras funciones.</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://medium.com/analytics-vidhya/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5">Arquitecturas</a></p></li>
+</ul>
+<p>Existen muchas arquitecturas, es decir cuantas capas, de que tipo y en que acomodo se usan en una red. Hay arquitecturas de redes neuronales que no tienen convolución, generalmente las usadas en reconocimiento y clasificación de imágenes si tienen. Algunas arquitecturas muy famosas de CNN especiales para detectar patrones visuales son VGG, Inception, RESNET.</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://www.cs.cmu.edu/~aharley/vis/conv/flat.html">Aquí</a> puedes encontrar un ejemplo interactivo y visual de una CNN para  reconocimiento de dígitos.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>No te preocupes si no entiendes al 100% todos los links o su teminología, pero para los videos se recomienda verlos un par de veces para comprender los conceptos, ya que es la base del aprendizaje.</p>
+</div>
+</div>
+<div class="section" id="deteccion-de-objetos">
+<h3>Detección de Objetos<a class="headerlink" href="#deteccion-de-objetos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>De acuero con <a class="reference external" href="Árearelacionadaconlavisiónartificialyelprocesamientodeimagenquetratadedetectarcasosdeobjetossemánticosdeunaciertaclase(comohumanos,edificios,ocoches)envídeoseimágenesdigitales.​">wikypedia</a>
+la detección de objetos es: Área relacionada con la visión artificial y el procesamiento de imagen que trata de detectar casos de objetos semánticos de una cierta clase (como humanos, edificios, o coches) en vídeos e imágenes digitales.​</p>
+<p>Es diferente un problema de clasificación cómo:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/fiat.jpg"><img alt="../_images/fiat.jpg" src="../_images/fiat.jpg" style="width: 200px;" /></a>
+</div>
+<p><a class="footnote-reference brackets" href="#f1" id="id1">1</a></p>
+<p>Donde es una sola clase en toda la imagen; a un problema de reconocimiento y clasificación como:</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="../_images/or.png"><img alt="../_images/or.png" src="../_images/or.png" style="width: 200px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/or1.png"><img alt="../_images/or1.png" src="../_images/or1.png" style="width: 220px;" /></a>
+</div>
+<p>Que son varias instancias de varias clases en una sola imágen. Como podemos ver, para
+el segundo ejemplo es necesario definir qué objeto se encuentra y que región ocupa
+dentro de la imagen.
+Algunas arquitecturas que se usan para problemas como el segundo ejemplo son:</p>
+<ul class="simple">
+<li><p>Region Based Object Detectors como R-CNN, Fast RCNN, Faster R-CNN, R-FCN, FPN You can learn a bit more 👁`here &lt;<a class="reference external" href="https://medium.com/&#64;jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9">https://medium.com/&#64;jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9</a>&gt;`_</p></li>
+</ul>
+<p>Estas usan una ventana que mueven por toda la imagen, esta imagen de la ventana se ajusta a un tamaño fijo
+y a cada una se le aplica un clasificador. Para reducir el número de operaciones, se usan métodos
+que proponen Regiones de Interés o  <em>Regions of Interest</em> (ROIs) o una red completa como <em>Region Proposal Network</em>
+o RPN, que reducen el número de ventanas a analizar,
+lo cuál se traduce en menor tiempo de entrenamiento. Pero para región se hacen <em>k</em> propuestas de región
+por clase. El número de operaciones que se hacen sigue siendo elevado.</p>
+<ul class="simple">
+<li><p>👁 <a class="reference external" href="https://medium.com/&#64;jonathan_hui/what-do-we-learn-from-single-shot-object-detectors-ssd-yolo-fpn-focal-loss-3888677c5f4d">Single Shot Detectors como YOLO y SSD</a></p></li>
+</ul>
+<p>Cómo se explica en el link, estas arquitecturas calculan al mismo tiempo un <em>boundary box</em> y la clase. Estos resultan ser buenos en procesamiento en tiempo real, pero tienenalgunos problemas
+para detectar objetos o muy cercanos o muy lejanos.</p>
+<p>Uno de los grandes problemas en detección de objetos y en general de Machine Learning,
+es la selección del modelo. Esto se resuleve muchas veces de manera empírica o por
+prueba y error. Vamos a tratar de implementar YOLO y SSD, sin dejar de tomar como opciones
+otras arquitecturas.</p>
+<p>Documentación YOLO y SSD:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pjreddie.com/darknet/yolo/">Página oficial YOLO</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1506.02640">Artículo YOLO</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1512.02325v5">Artículo SSD</a></p></li>
+</ul>
+</div>
+<div class="section" id="como-se-implementan">
+<h3>¿Cómo se implementan?<a class="headerlink" href="#como-se-implementan" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Primero debemos configurar nuestro ambiente de desarrollo. Cómo se explicó en la Introducción este debe
+ser implentado en Ubuntu Focal. Lo que ocupamos:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.anaconda.com/">Anaconda</a> : Aunque no es necesaria, es súper útil para crear ambientes con diferentes especificaciones. Además tiene otras herremientas para trabajar. Se pudieran usar otras herramientas como pipenv.</p></li>
+<li><p><a class="reference external" href="https://www.tensorflow.org/">Tensorflow</a> Es una plataforma que contiene herramientas, librerías y recursos que permiten a los desarrolladores introducirse al estado del arte en Machine Learning.​ La implementación de arquitecturas de redes neuronales es relativamente fácil. ​Con 3 líneas de código es posible agregar capas. Basta con cambiar las entradas (placeholders) para usar en otras aplicaciones.​</p></li>
+<li><p><a class="reference external" href="https://keras.io/">Keras</a>  es un API de alto nivel escrita en python para redes neuronales, permite trabajar por encima de Tensorflow. Ideal para hacer prototipos fáciles y rápidos.​ Usa el backend de tensorflow y tiene ya implementadas capas que son comunes en muchas arquitecturas​</p></li>
+</ul>
+<p><strong>Hardware</strong></p>
+<p>Es recomendable tener una tarjeta gráfica con poder computacional &gt;=3.5 para el entrenamiento.
+Aunque se puede usar solo CPU, los tiempos de entrenamiento aumentan muy considerablemente.
+Si se cuenta con tarjeta gráfica, estos son los requerimientos de hardware de acuerdo a la <a class="reference external" href="https://www.tensorflow.org/install/gpu#hardware_requirements">página
+oficial de Tensorflow</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://developer.nvidia.com/cuda-gpus">Compute Capability Nvidia GPUs</a></p></li>
+</ul>
+<p>En resúmen Tensorflow tiene soporte para CPU y GPU, es mil vices más recomendable GPU, para la instalación
+de cualquiera de los dos se puede hacer por comandos pip o usando una imagen de docker. Nuevamente lo ideal
+y en teoría más sencillo es con una imagen de docker, pues solo se tienen que instalar los drivers manualmente,</p>
+<p>​</p>
+</div>
+</div>
+<div class="section" id="instalacion">
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="brief-summary">
+<h3>Brief Summary<a class="headerlink" href="#brief-summary" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Última actualización: 6/22/2019 with TensorFlow v1.13.1.</p>
+<p>Pripalmente está basado en
+<a class="reference external" href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10">el repositorio de EdjeElectronics</a>
+y
+<a class="reference external" href="https://github.com/Khaivdo/How-to-train-an-Object-Detector-using-Tensorflow-API-on-Ubuntu-16.04-GPU">el de Khaivdo</a>’s
+repositories.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>El desarrollo se hizo con CPU, pues se contaba con una GPU antigua con poca capacidad de computo. Se anunciará que comandos pueden cambiar para diferente versión de Ubuntu o Tensorflow además de algunos links  de ayuda para la instalación y algunos posibles problemas que se prevean.Aquí se usó Tensorflow CPU 1.7</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>1. Anaconda<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Instalar los requerimientos:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgl1</span><span class="o">-</span><span class="n">mesa</span><span class="o">-</span><span class="n">glx</span> <span class="n">libegl1</span><span class="o">-</span><span class="n">mesa</span> <span class="n">libxrandr2</span> <span class="n">libxrandr2</span> <span class="n">libxss1</span> <span class="n">libxcursor1</span> <span class="n">libxcomposite1</span> <span class="n">libasound2</span> <span class="n">libxi6</span> <span class="n">libxtst6</span> <span class="o">-</span><span class="n">y</span>
+</pre></div>
+</div>
+<p>Descarga el archivo de instalación con estos comandos:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span>  <span class="o">~/</span><span class="n">Desktop</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2020.02</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2020.02</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Y ejecuta:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sh</span> <span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2020.02</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">y</span>
+</pre></div>
+</div>
+<p>Ahora que está instalado, puedes borrar el archivo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2020.02</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-and-set-your-environment">
+<h3>2. Create and set your environment<a class="headerlink" href="#create-and-set-your-environment" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Open a new terminal and it should appear <em>(base)</em> before your user name.</p>
+<p><em>I case it doesn’t, run this commands:</em> <sub>~</sub> eval
+«$(/home//anaconda3/bin/conda shell.bash hook) conda init <sub>~</sub> <em>In
+case you use a different shell, replace shell.bash for shell.&lt;
+YourShell&gt;</em></p>
+<p>Download the spec-list_tf-cpu.txt file
+<a class="reference external" href="https://ugtomx-my.sharepoint.com/:f:/g/personal/de_gamasandoval_ugto_mx/EpCz_C7gow5Ai7OjD9TBcoABi6aGlIjGSsUvc4n5Gj3mdA?e=VbZKWV">here</a>:
+Now let’s create and activate our environment: <sub>~</sub> conda create
+–name tf-cpu –file ~/Downloads/spec-list_tf-cpu.txt conda activate
+tf-cpu <sub>~</sub> Install this dependecies: <sub>~</sub> pip install Cython
+pip install contextlib2 pip install pillow pip install lxml pip install
+jupyter pip install matplotlib pip install pandas pip install
+opencv-python pip install
+«git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&amp;subdirectory=PythonAPI»
+<sub>~</sub> Install tensorflow version 1.7 <sub>~</sub> pip install
+tensorflow==1.7 <sub>~</sub> <em>You can propably use another version but some
+lines of code might change, and you’ll need to find its corresponding
+API version</em></p>
+</div>
+<div class="section" id="download-repositories">
+<h3>3. Download repositories<a class="headerlink" href="#download-repositories" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>First create a directory on your Desktop <sub>~</sub> cd ~/Desktop mkdir
+ObjectDetection <sub>~</sub> ### 3.3 <a class="reference external" href="https://github.com/Daegas/CustumObjectDetection">This
+Repository</a></p>
+<div class="section" id="tensorflow-object-detection-api">
+<h4>3.2 <a class="reference external" href="https://github.com/tensorflow/models">Tensorflow Object Detection API</a><a class="headerlink" href="#tensorflow-object-detection-api" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>There are several branches of the API they are targeted to different
+tensorflow versions, since we installed version 1.7,
+<a class="reference external" href="https://github.com/tensorflow/models/tree/adfd5a3aca41638aa9fb297c5095f33d64446d8f">here</a>
+is the corresponding branch. You have two option for download it: -
+Directly from github (Click on Clone or Download button) and then
+extract it on your ~/Desktop/ObjectDetection directory. - Or you can try
+with these commands, which I saw works properly <sub>~</sub> cd
+~/Desktop/ObjectDetection git clone <a class="reference external" href="https://github.com/tensorflow/models">https://github.com/tensorflow/models</a>
+cd models git reset –hard adfd5a3aca41638aa9fb297c5095f33d64446d8f
+<sub>~</sub> <em>You basically download the current repository and then reset
+to an old commit with its sha.</em></p>
+</div>
+<div class="section" id="model-zoo">
+<h4>3.3 <a class="reference external" href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">Model Zoo</a><a class="headerlink" href="#model-zoo" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>You can find a list of models, download and extract into
+PretrainedModels. Here will use
+<a class="reference external" href="http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz">ssd_inception_v2_coco</a>
+Finally this is how ObjectDetection should look</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADD</span> <span class="n">IMAGE</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="compile-protobufs">
+<h3>4. Compile Protobufs<a class="headerlink" href="#compile-protobufs" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Protobuf is a way to share data among applications, a little bit like
+what JSON does. Is used by tensorflow to configure models and training
+parameters and is implemented for several languages. So we need to
+compile it for python. <sub>~</sub> cd
+~/Desktop/ObjectDetection/models/research protoc
+object_detection/protos/*.proto –python_out=. <sub>~</sub> This creates
+a name_pb2.py file from every name.proto file in the
+/object_detection/protos folder.</p>
+<p><strong>(Note: TensorFlow occassionally adds new .proto files to the folder.
+If you get an error saying ImportError: cannot import name
+“something_something_pb2” , you may need to update the protoc command
+to include the new .proto files.)</strong></p>
+</div>
+<div class="section" id="pythonpath">
+<h3>5. PYTHONPATH<a class="headerlink" href="#pythonpath" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>For running, you need to specify where it gathers the data. So add
+models/research to your PYTHONPATH. You’ll need eat for each new
+terminal, you could add it to your .bashrc file which is in /home and
+appear by pressing <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code>+<code class="docutils literal notranslate"><span class="pre">h</span></code> but you’ll need to replace the
+<code class="docutils literal notranslate"><span class="pre">pwd</span></code> for the absolute path to models/research.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ~/Desktop/ObjectDetection/models/research/
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+</pre></div>
+</div>
+</div>
+<div class="section" id="test">
+<h3>6. Test<a class="headerlink" href="#test" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>There are 2 ways to test your installation ### Easy Just run: <sub>~</sub>
+cd ~/Desktop/ObjectDetection/models/research/ python
+object_detection/builders/model_builder_tf1_test.py <sub>~</sub> Looks
+like this: ADD IMAGE</p>
+<div class="section" id="explained">
+<h4>Explained<a class="headerlink" href="#explained" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">ObjectDetection</span><span class="o">/</span><span class="n">models</span><span class="o">/</span><span class="n">research</span><span class="o">/</span><span class="n">object_detection</span>
+<span class="n">jupyter</span> <span class="n">notebook</span> <span class="n">object_detection_tutorial</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+<p>If it doesn’t opens directly the notebook, click on the link that
+appears on your terminal and open the notebook
+object_detection_tutorial.ipynb listed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADD</span> <span class="n">IMAGE</span>
+</pre></div>
+</div>
+<p><em>This section is from
+`Edje &lt;https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10&gt;`__</em></p>
+<p>This opens the script in your default web browser and allows you to step
+through the code one section at a time. You can step through each
+section by clicking the “Run” button in the upper toolbar. The section
+is done running when the “In [ * ]” text next to the section populates
+with a number (e.g. “In [1]”).</p>
+<p>(Note: part of the script downloads the ssd_mobilenet_v1 model from
+GitHub, which is about 74MB. This means it will take some time to
+complete the section, so be patient.)</p>
+<p>Once you have stepped all the way through the script, you should see two
+labeled images at the bottom section the page. If you see this, then
+everything is working properly! If not, the bottom section will report
+any errors encountered. See the
+<a class="reference external" href="https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#appendix-common-errors">Appendix</a>
+for a list of errors I encountered while setting this up.</p>
+<p><strong>Note: If you run the full Jupyter Notebook without getting any errors,
+but the labeled pictures still don’t appear, try this: go in to
+object_detection/utils/visualization_utils.py and comment out the
+import statements around lines 29 and 30 that include matplotlib. Then,
+try re-running the Jupyter notebook.</strong></p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://thumbs.dreamstime.com/b/old-fiat-500-1-13471810.jpg">https://thumbs.dreamstime.com/b/old-fiat-500-1-13471810.jpg</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+	    </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="intro.html" class="btn btn-neutral" title="Introducción"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Daegas.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/language_data.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/translations.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>
