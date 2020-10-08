@@ -59,8 +59,8 @@ exclude_patterns = []
 #
 
 html_theme = 'sphinx_pdj_theme'
-import sphinx_pdj_theme
-html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+# import sphinx_pdj_theme
+# html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 html_theme_options = {
     'style': 'darker'
 }
