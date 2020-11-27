@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>3_57.png</filename>
+	<path>/home/dara/Desktop/CustumObjectDetection/data/train/3_57.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>755</width>
+		<height>565</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>husky</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>482</xmin>
+			<ymin>379</ymin>
+			<xmax>755</xmax>
+			<ymax>565</ymax>
+		</bndbox>
+	</object>
+</annotation>

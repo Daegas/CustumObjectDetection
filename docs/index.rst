@@ -7,11 +7,18 @@ Welcome to Custom Object Detection's documentation!
 ===================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    pages/intro
-   pages/training
+   pages/tra-context
+   pages/tra-installation
+   pages/tra-training
+   pages/impl-context
+   pages/impl-installation
+   pages/impl-implementation
+
+
 
 
 

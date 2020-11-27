@@ -60,10 +60,11 @@ El proyecto consta de dos etapas principales y hay un repositorio para cada etap
 * **Entrenamiento:** `CustumObjectDetection <https://github.com/Daegas/CustumObjectDetection>`_ Usando Anaconda,Python, Tensorflow, Keras.
 * **Implementación:** `multi_camera_husky <https://github.com/Daegas/multi_camera_husky>`_ Usando ROS, Gazebo y Python. 
 
+Cada etapa tiene un contexto, instalación y la aplicación final.
 Se tratará de explicar a grandes rasgos lo necesario para entender 
 y reproducir cada etapa. 
 Además se agregaran algunos links
 con información adicional denotados por 👁. Estos, son  muchas veces en inglés.
 Prepárense para leer bastante.
 
-.. note:: La etapa de implementación aún no está completa por los motivos expresados en la Introducción. 
+.. note:: La apliación de la etapa de implementación aún no está completa por los motivos expresados en la Introducción. 
