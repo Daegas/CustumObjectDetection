@@ -2,6 +2,8 @@
 Ent/Entrenamiento (Ahora sí)
 =================================
 
+Repositorio: `CustumObjectDetection <https://github.com/Daegas/CustumObjectDetection>`_ 
+
 
 1. Generar records de tensorflow
 =================================
@@ -40,6 +42,10 @@ Lo que tienes que modificar:
 *Opcional* 
 
 7. num_steps: 100000 Esto es el número de pasos que se harán para el entrenamiento, evidentemente, mientras más pasos, más tiempo, Pero también se puede pasar más adelante como argumento.
+
+.. note:: En el directorio ~/tf-cpu/training ya está modificado, solo se tendría que cambiar el nombre de usuario en los PATHS.
+
+
 
 3. ¡A entrenar!
 ================
@@ -129,13 +135,37 @@ Y para cámara:
     python webcam.py
 
 
-7. Resultado
+7. Resultados 📰
 ==================
 Aquí se enlistan algunos resultados. Se paró el proceso, pues al ser muy lento el entrenamiento en CPU era muy poco conveniente.
 
-#. Resultados al `paso 41521 / 200000  <https://youtu.be/29_qzIE3WtA>`_ .
-#. Resultados al `paso 6324 / 200000  <https://youtu.be/r-SI0KqTpcQ>`_ .
+#. Resultados al `paso 41521 / 200000  <https://youtu.be/29_qzIE3WtA>`_ . |step-41521|
+#. Resultados al `paso 63324 / 200000  <https://youtu.be/r-SI0KqTpcQ>`_ . |step-63324|
 
 En los videos se muestra, el tensorboard, luego se detiene el proceso de tensorboard y el de entrenamiento,
 para exportar y correr el modelo en el video de la sección  `6. Usar el modelo`_
+
+.. attention:: Estas pruebas son sin las imágenes  2_27 - 3_178 que se agregaron después al repositorio.
+
+Orden de Imágenes:
+--------------------
+
+* 0 _ *x*  | Simulación Husky, SIN cámara, fondo default
+* 1 _ *x*  | Simulación Husky, CON cámara, fondo default
+* 2 _ *x*  | Descargadas de internet
+* 3 _ *x*  | Simulaciones en el playpen (x< 101) y capturas de pantalla (x>=102).
+
+.. Gráficas de TotalLoss de los pasos:
+
+.. |step-41521| image:: img/step-41521.jpeg
+   :scale: 50 %
+   :alt: 
+
+.. |step-63324| image:: img/step-63324.jpeg
+   :scale: 50 %
+   :alt: 
+
+
+
+
 

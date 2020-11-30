@@ -92,7 +92,7 @@ dentro de la imagen.
 Algunas arquitecturas que se usan para problemas como el segundo ejemplo son:
 
 
-* Region Based Object Detectors como R-CNN, Fast RCNN, Faster R-CNN, R-FCN, FPN You can learn a bit more 👁`here <https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9>`_
+* Region Based Object Detectors como R-CNN, Fast RCNN, Faster R-CNN, R-FCN, FPN You can learn a bit more 👁 `here <https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9>`_
 
 Estas usan una ventana que mueven por toda la imagen, esta imagen de la ventana se ajusta a un tamaño fijo 
 y a cada una se le aplica un clasificador. Para reducir el número de operaciones, se usan métodos

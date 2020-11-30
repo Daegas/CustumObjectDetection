@@ -275,7 +275,7 @@ Después de terminar el paso 3 , así debe verse tu directorio:
 
 * *PretrainedModels* Contiene al menos un modelo que descargaste del model Zoo.
 
-* *training* Contiene el mapa de etiquetas,  a menos que se agreguen clases, no se modifica. En este caso solo una: "husky". Y aquí se guardaran los datos de entrenamiento.
+* *training* Contiene el mapa de etiquetas, a menos que se agreguen clases, no se modifica. En este caso solo una: "husky". Y aquí se guardaran los datos de entrenamiento.  *Editado: También contiene un archivo de configuración, más adelante se usa*
 
 * *export_inference_graph.py* Prepara un grafo de tensorflow para inferencia usando la configuración del modelo y opcionalmente un checkpoint del entrenamiento.
 
