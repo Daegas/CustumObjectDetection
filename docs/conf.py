@@ -76,3 +76,17 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# extensions.append('easydev.copybutton')
+# jscopybutton_path = easydev.copybutton.get_copybutton_path()
+
+# if os.path.isdir('_static')==False:
+#     os.mkdir('_static')
+
+# import shutil
+# shutil.copy(jscopybutton_path, '_static')
+
+# html_static_path = ['_static']
+
+# extensions.append('sphinx.ext.todo')
+# todo_include_todos=True

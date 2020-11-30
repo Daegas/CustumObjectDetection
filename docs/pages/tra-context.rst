@@ -124,10 +124,10 @@ Documentación YOLO y SSD:
    
 ¿Cómo se implementan?
 ---------------------------
-Primero debemos configurar nuestro ambiente de desarrollo. Cómo se explicó en la Introducción este debe 
-ser implentado en Ubuntu Focal. Lo que ocupamos:
+Primero debemos configurar nuestro ambiente de desarrollo. Cómo se explicó en la Introducción este fue
+implentado en Ubuntu 18.04. Lo que ocupamos:
 
-* `Anaconda <https://www.anaconda.com/>`_ : Aunque no es necesaria, es súper útil para crear ambientes con diferentes especificaciones. Además tiene otras herremientas para trabajar. Se pudieran usar otras herramientas como pipenv. 
+* `Anaconda <https://www.anaconda.com/>`_ : Aunque no es totalmente necesaria, es súper útil para crear ambientes con diferentes especificaciones. Además tiene otras herremientas útiles para trabajar. Una alternativa es pipenv. 
 
 * `Tensorflow <https://www.tensorflow.org/>`_ Es una plataforma que contiene herramientas, librerías y recursos que permiten a los desarrolladores introducirse al estado del arte en Machine Learning.​ La implementación de arquitecturas de redes neuronales es relativamente fácil. ​Con 3 líneas de código es posible agregar capas. Basta con cambiar las entradas (placeholders) para usar en otras aplicaciones.​
 
@@ -140,9 +140,10 @@ Aunque se puede usar solo CPU, los tiempos de entrenamiento aumentan muy conside
 
 Tensorflow tiene soporte para CPU y GPU, es mil vices más recomendable GPU, para la instalación 
 de cualquiera de los dos se puede hacer por comandos pip o usando una imagen de docker. Nuevamente lo ideal
-y en teoría más sencillo es con una imagen de docker, pues solo se tienen que instalar los drivers manualmente,
+y en teoría más sencillo es con una imagen de docker, pues solo se tienen que instalar los drivers manualmente.
 
-​
+
+
 
 
 .. rubric:: Footnotes
