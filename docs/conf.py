@@ -90,3 +90,4 @@ html_static_path = ['_static']
 
 # extensions.append('sphinx.ext.todo')
 # todo_include_todos=True
+# pip install sphinx_pdj_theme

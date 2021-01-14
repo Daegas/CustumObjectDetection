@@ -1,7 +1,9 @@
 =================================
-Ent/Entrenamiento (Ahora sí)
+Entrenamiento 
 =================================
 
+
+(Ahora sí)
 Repositorio: `CustumObjectDetection <https://github.com/Daegas/CustumObjectDetection>`_ 
 
 

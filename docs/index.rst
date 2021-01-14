@@ -10,13 +10,13 @@ Welcome to Custom Object Detection's documentation!
    :maxdepth: 3
    :caption: Contents:
 
-   pages/intro
-   pages/tra-context
-   pages/tra-installation
-   pages/tra-training
-   pages/impl-context
-   pages/impl-installation
-   pages/impl-implementation
+   pages/1intro
+   pages/2context
+   pages/3installation
+   pages/4training
+   pages/5ROS-context
+   pages/6ROS-installation
+   pages/7ROS-implementation
 
 
 
